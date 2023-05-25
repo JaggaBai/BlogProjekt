@@ -1,0 +1,27 @@
+﻿@page
+@model Blog.Pages.Autor.Wpisy.PublikacjeModel
+@{
+}
+<div class="bg-light">
+    <h1>Wpisy</h1>
+</div>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+            <td>Data</td>
+            <td>Tytuł</td>
+            </tr>
+        </thead>
+        <tbody > @foreach (var item in Model.Lista)
+            {
+                <tr>
+            <td>@item.Date</td>
+            <td>@item.Title</td>
+             
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>       
